@@ -2,7 +2,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Home from './Pages/Home'
 import Links from './Pages/Links'
 
-export default function RoutesApp(){
+function RoutesApp(){
     return(
         <BrowserRouter>
             <Routes>
@@ -12,3 +12,5 @@ export default function RoutesApp(){
         </BrowserRouter>
     )
 }
+
+export default RoutesApp()
