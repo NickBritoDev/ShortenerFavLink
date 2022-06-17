@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 78vh;
+    height: 85vh;
 }
 
 /*Logo Area*/
@@ -16,7 +16,7 @@
 }
 
 .logo-icon{
-    background-color: aliceblue;
+    background-color: black;
     width: 115px;
     height: 115px;
     margin: 25px auto;
@@ -33,9 +33,11 @@
 @keyframes rotate-vert-center {
 to {
     transform: rotate(-45deg);
+    background-color: black;
 }
 from {
     transform: rotate(0);
+    background-color: aliceblue;
 }
 }
 
@@ -72,7 +74,7 @@ from {
     display: flex;
     flex-direction: column;
     color: aliceblue;
-    animation: slide ease-in-out 3s;
+    animation: slide ease-in-out 1.5s;
 }
 
 .container-input input{
@@ -116,7 +118,7 @@ from {
     padding: 10px 22px;
     border: none;
     border-radius: 10px;
-    background-color: aliceblue;
+    background-color: black;
     color: #f5af19;
     font-weight: bold;
     cursor: pointer;
@@ -124,9 +126,8 @@ from {
 
 .btn:hover{
     padding: 10px 22px;
-    border: 1px solid black;
     border-radius: 10px;
-    background-color: #f5af19;
-    color: aliceblue;
+    background-color: aliceblue;
+    color: #f5af19;
     font-weight: bold;
 }
