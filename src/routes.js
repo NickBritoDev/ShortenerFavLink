@@ -6,7 +6,7 @@ export default function RoutesApp(){
     return(
         <BrowserRouter>
             <Routes>
-                <Route path="/shortenerfavlink" element={<Home/>}/>
+                <Route path="/shortenerfavlink/" element={<Home/>}/>
                 <Route path="/links" element={<Links/>}/>
             </Routes>
         </BrowserRouter>
