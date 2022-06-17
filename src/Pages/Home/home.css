@@ -1,0 +1,132 @@
+/*Container-home Area*/
+.container-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 78vh;
+}
+
+/*Logo Area*/
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-icon{
+    background-color: aliceblue;
+    width: 115px;
+    height: 115px;
+    margin: 25px auto;
+    border-radius: 10px 10px;
+    color: #f5af19;
+    animation: rotate-vert-center ease 3s;
+    transform: rotate(-45deg)
+}
+
+.rotate-logo{
+    animation: rotate-infinite-logo infinite ease 3s;
+}
+
+@keyframes rotate-vert-center {
+to {
+    transform: rotate(-45deg);
+}
+from {
+    transform: rotate(0);
+}
+}
+
+@keyframes rotate-infinite-logo {
+to {
+    transform: rotateY(360deg);
+}
+from {
+    transform: rotateY(0);
+}
+}
+
+.logo h1{
+    display: flex;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.logo span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+/*Container-input area*/
+.container-input{
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    animation: slide ease-in-out 3s;
+}
+
+.container-input input{
+    border: none;
+    outline: none;
+    background: none;
+    color:aliceblue;
+    font-size: 15px;
+}
+
+@keyframes slide{
+    from{
+        transform:translateY(100vh);
+    }
+    to{
+        transform:translateY(0px);
+    }
+}
+
+.container-input .link-simple-icon{
+    margin-left: -3.5rem;
+}
+
+.container-input input::placeholder{
+    color:aliceblue;
+}
+
+.container-input div{
+    background-color: rgba(128, 128, 128, 0.555);
+    display: flex;
+    width: 100%;
+    padding: 0.5rem 4.5rem;
+    flex-direction: row;
+    gap: 10px;
+    border-radius: 10px;
+    margin: 15px auto;
+}
+
+/*Button area*/
+.btn{
+    padding: 10px 22px;
+    border: none;
+    border-radius: 10px;
+    background-color: aliceblue;
+    color: #f5af19;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover{
+    padding: 10px 22px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #f5af19;
+    color: aliceblue;
+    font-weight: bold;
+}
