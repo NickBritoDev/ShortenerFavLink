@@ -7,7 +7,7 @@ export default function Links(){
         <div className='container-links'>
 
             <div className='links-header'>
-                <Link className='link' to='/'>
+                <Link className='link' to='/home'>
                     <ArrowCircleLeft className='icon-arrow' size={32} />
                 </Link>
             <h2>Meus Links Favoritos</h2>
