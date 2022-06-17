@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/ShortenerFavLink/static/css/main.da56bbe3.css",
-    "main.js": "/ShortenerFavLink/static/js/main.ffb7e46e.js",
-    "index.html": "/ShortenerFavLink/index.html",
-    "main.da56bbe3.css.map": "/ShortenerFavLink/static/css/main.da56bbe3.css.map",
-    "main.ffb7e46e.js.map": "/ShortenerFavLink/static/js/main.ffb7e46e.js.map"
+    "main.css": "/shortenerfavlink/static/css/main.da56bbe3.css",
+    "main.js": "/shortenerfavlink/static/js/main.ffb7e46e.js",
+    "index.html": "/shortenerfavlink/index.html",
+    "main.da56bbe3.css.map": "/shortenerfavlink/static/css/main.da56bbe3.css.map",
+    "main.ffb7e46e.js.map": "/shortenerfavlink/static/js/main.ffb7e46e.js.map"
   },
   "entrypoints": [
     "static/css/main.da56bbe3.css",
