@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/shortenerfavlink/static/css/main.a0a49ebc.css",
-    "main.js": "/shortenerfavlink/static/js/main.6d4861d1.js",
+    "main.css": "/shortenerfavlink/static/css/main.e84be318.css",
+    "main.js": "/shortenerfavlink/static/js/main.a9fa6277.js",
     "index.html": "/shortenerfavlink/index.html",
-    "main.a0a49ebc.css.map": "/shortenerfavlink/static/css/main.a0a49ebc.css.map",
-    "main.6d4861d1.js.map": "/shortenerfavlink/static/js/main.6d4861d1.js.map"
+    "main.e84be318.css.map": "/shortenerfavlink/static/css/main.e84be318.css.map",
+    "main.a9fa6277.js.map": "/shortenerfavlink/static/js/main.a9fa6277.js.map"
   },
   "entrypoints": [
-    "static/css/main.a0a49ebc.css",
-    "static/js/main.6d4861d1.js"
+    "static/css/main.e84be318.css",
+    "static/js/main.a9fa6277.js"
   ]
 }
