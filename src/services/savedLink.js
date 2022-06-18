@@ -26,3 +26,14 @@ export async function saveLink(key, newLink){
 }
 
 //remover dos favoritos
+export function deleteLink(links, id){
+    //acessa o banco de dados em busca do id 
+    let myLinks = links.filter(item => {
+        return(item.id !== id)
+    })
+    //atualiza o banco de dados removendo o item selecionado
+    localStorage.setItem('@ShortenerFavLink', JSON.stringify(myLinks))
+    alert('Link deletado com sucesso! 🗑️​ ')
+
+    return myLinks
+}
