@@ -5,8 +5,9 @@ font-family: 'Source Serif Pro', serif;*/
     background-color: rgba(0, 0, 0, 0.664);
     width: 100vw;
     height: 100vh;
-    position: absolute;
-    bottom: -11.7%;
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
     animation: slide-modal 1s ease-in-out;
     font-family: 'Source Serif Pro', serif;
 }
@@ -24,7 +25,7 @@ font-family: 'Source Serif Pro', serif;*/
 .container-modal{
     background-color: black;
     color: aliceblue;
-    position: absolute;
+    position: fixed;
     bottom: 50%;
     right: 2.5%;
     border-radius: 10px;

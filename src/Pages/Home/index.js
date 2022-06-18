@@ -3,16 +3,36 @@ import { useState } from 'react'
 import { LinkBreak, LinkSimple } from 'phosphor-react'
 import HomeButton from '../../components/HomeButton'
 import Modal from '../../components/Modal'
+import api from '../../services/api'
+import { saveLink } from '../../services/savedLink'
 
 export default function Home() {
     //faz a captura do que foi escrito pelo usuario no campo input
     const [link, setLink] = useState('')
     //controla a renderização condicional do modalTrigger
     const [openModal, setOpenModal] = useState(false)
+    //faz a caputura dos dados retornados pela api (id, link, long_url)
+    const [data, setData] = useState({})
 
     //acionador do modal com o link encurtado
-    function modalTrigger() {
-        setOpenModal(true)
+    async function modalTrigger() {
+        //onde esta sendo efetuado a requisição
+        try {
+            //faz a requisição do que foi escrito pelo usuario e pega o long link
+            const response = await api.post('/shorten', {long_url: link})
+            setLink('')
+            //pegar os dados referente ao data da api 
+            setData(response.data)
+            //apresenta o modal aberto com os dados capturados pela api
+            setOpenModal(true)
+            //salva os links digitados pelo usuario
+            saveLink('@ShortenerFavLink', response.data)
+        } 
+        //responde caso algo der errado 
+        catch {
+            alert("Algo deu errado 🚨​ Não se preocupe, tente novamente 😅​")
+            setLink('')
+        }
     }
     return (
         <div className='container-home'>
@@ -46,7 +66,9 @@ export default function Home() {
                 //renderização condicional sobe a condilçao do click do modaltrigger
                 <Modal
                 //fecha o botão
-                closeModal={() => setOpenModal(false)}/>
+                closeModal={() => setOpenModal(false)}
+                //passa a propriedade data ode esta os dados da api para fazer a requisição no modal
+                content={data}/>
             )}
         </div>
     )

@@ -11,16 +11,6 @@
     justify-content: center;
     gap: 15px;
     margin-top: 30px;
-    animation: slide-lateral-links-header 1.5s ease-in-out;
-}
-
-@keyframes slide-lateral-links-header {
-    from{
-        transform: translateY(-100%);
-    }
-    to{
-        transform: translateY(0);
-    }
 }
 
 .link{
@@ -33,12 +23,12 @@
     align-items: center;
     justify-content: center;
     margin: 15px auto;
-    animation: slide-lateral-links 2s ease-in-out ;
+    animation: slide-lateral-links 1.5s ease-in-out ;
 }
 
 @keyframes slide-lateral-links {
     from{
-        transform: translateX(-100%);
+        transform: translateX(-500px);
     }
     to{
         transform: translateX(0);
@@ -53,7 +43,7 @@
 
 .link-saved{
     background-color:rgba(128, 128, 128, 0.555);
-    width: 50%;
+    width: 80%;
     padding: 0.5rem 4.5rem;
     border: none;
     border-radius: 10px;
@@ -64,6 +54,7 @@
     color: aliceblue;
     margin-right: 5px;
     overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .link-trash{
@@ -73,6 +64,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    color: rgb(231, 20, 20);
+    color: rgb(206, 14, 14);
+    cursor: pointer;
 }
 

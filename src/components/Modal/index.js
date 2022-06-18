@@ -1,7 +1,13 @@
 import './modal.css'
 import {X, CopySimple} from 'phosphor-react'
 
-export default function Modal({closeModal}){
+export default function Modal({closeModal, content}){
+
+    //faz a copia da url encurtada para o usuario pode fazer a cola onde quiser
+    async function copyLink(){
+        await navigator.clipboard.writeText(content.link)
+        alert('Sua URL foi encurtada com sucesso, ela se encontra na aba favoritos no canto superior direito da página principal ​🥳')
+    }
     return(
     <div className='container'>
         <div className='container-modal'>
@@ -18,11 +24,11 @@ export default function Modal({closeModal}){
             </div>
 
             <span className='span-modal'>
-                https://youtube.com/rocketseats
+                {content.long_url}
             </span>
 
-            <button className='copy-btn'>
-                https://bit.ly/0098
+            <button className='copy-btn' onClick={copyLink} >
+                {content.link}
                 <CopySimple size={25} color="#f5af19"/>
             </button>
         </div>
