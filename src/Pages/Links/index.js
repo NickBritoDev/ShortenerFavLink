@@ -58,9 +58,9 @@ export default function Links(){
             {emptyList && (
                 <div className='img-list'>
                     <div className='container-img'>
-                        <h3>Você ainda não tem nehum link salvo</h3>
+                        <h3>Você ainda não tem nenhum link salvo</h3>
                         <p>Comece hoje mesmo a encurtar os links que antes eram infinitos e impossiveis de decorar. </p>
-                        <span>Comece a encurtar e favoritar suas url's em um click​ </span>
+                        <span>Venha encurtar e favoritar suas url's em um click​ 🌟​ </span>
                         <div className='button-area'>
                             <Link to='/shortenerfavlink/'>
                         <button className='fav-first'> Encurtar e Favoritar</button>

@@ -4,9 +4,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 85vh;
-    position: absolute;
-    top: 5%;
+    position: fixed;
+    bottom:25%;
 }
 
 /*Logo Area*/
