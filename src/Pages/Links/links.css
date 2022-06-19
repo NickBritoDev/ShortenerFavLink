@@ -25,6 +25,8 @@
     margin: 15px auto;
     animation: slide-lateral-links 1.5s ease-in-out ;
     width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 @keyframes slide-lateral-links {

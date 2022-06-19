@@ -6,20 +6,9 @@
     justify-content: center;
     height: 80vh;
     position:static;
-    margin-top:8%;
+    margin-top:18%;
     margin-bottom: 0%;
     background-color: #f5af19;
-}
-
-
-@media (max-width:700px){
-    .container-home:hover{
-        position:static;
-        margin-top:18%;
-        margin-bottom: 0%;
-        background-color: #f5af19;
-    }
-    
 }
 
 /*Logo Area*/
