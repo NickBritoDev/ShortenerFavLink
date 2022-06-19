@@ -17,6 +17,7 @@
         position:absolute;
         margin-top:190%;
         width: 95%;
+        overflow: hidden;
     }
     .container-home:hover{
         background-color: rgba(0, 0, 0, 0.658) ;
@@ -24,6 +25,7 @@
         border-radius: 25px;
         padding: 20px 0;
         z-index: 5;
+        overflow: hidden;
     }
 
     .logo-icon{
