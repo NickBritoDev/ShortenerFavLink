@@ -24,6 +24,7 @@
     justify-content: center;
     margin: 15px auto;
     animation: slide-lateral-links 1.5s ease-in-out ;
+    width: 90%;
 }
 
 @keyframes slide-lateral-links {
