@@ -4,41 +4,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position:absolute;
-    margin-top:125%;
+    height: 90vh;
+    position:static;
+    margin-top:2%;
+    margin-bottom: 0%;
+    background-color: #f5af19;
 }
- /*responsive container area*/
- @media screen and (max-width: 700px){
-    .container-home{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position:absolute;
-        margin-top:150%;
-        width: 95%;
-        height: 70vh;
-        overflow: hidden;
-    }
-    .container-home:hover{
-        background-color: rgba(0, 0, 0, 0.658) ;
-        color: #f5af19;
-        border-radius: 25px;
-        padding: 5px 0;
-        z-index: 5;
-        }
 
-    .logo-icon{
-        background-color: #f5af19;
-        width: 115px;
-        height: 115px;
-        margin: 25px auto;
-        border-radius: 10px 10px;
-        color: #f5af19;
-        animation: rotate-vert-center ease 3s;
-        transform: rotate(-45deg);
-    }
- }
+@media (max-width:700px){
+
+}
 
 /*Logo Area*/
 .logo{
