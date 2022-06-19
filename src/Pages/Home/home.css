@@ -4,8 +4,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: fixed;
-    bottom:25%;
+    position:static;
+    margin-top: 25%;
 }
 
 /*Logo Area*/
