@@ -5,8 +5,19 @@
     align-items: center;
     justify-content: center;
     position:absolute;
-    margin-top:150%;
+    margin-top:125%;
 }
+ /*responsive container area*/
+ @media screen and (max-width: 400px){
+    .container-home{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position:absolute;
+        margin-top:190%;
+    }
+ }
 
 /*Logo Area*/
 .logo{
