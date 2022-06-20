@@ -11,34 +11,11 @@
     background-color: #f5af19;
 }
 
-.container-home:hover .rotate-logo{
+.container-home:hover .logo h1{
     display: none;
+    text-align: center;
+    margin-top: 15px;
 }
-
-.container-home:hover {
-    height: 80vh;
-    margin-top:2%;
-}
-
-.btn{
-    padding: 10px 22px;
-    border: 2px solid #f5af19;
-    border-radius: 10px;
-    background-color: black;
-    color: #f5af19;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.container-input:hover input:hover.logo{
-    display: none;
-    border: none;
-    outline: none;
-    background: none;
-    color:aliceblue;
-    font-size: 15px;
-}
-
 /*Logo Area*/
 .logo{
     display: flex;
@@ -88,13 +65,14 @@ from {
     margin-top: 15px;
 }
 
-.logo span{
+.container-input span{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     text-align: center;
     text-transform: uppercase;
+    color: black;
     margin-top: 15px;
     font-size: 15px;
     font-weight: bold;
