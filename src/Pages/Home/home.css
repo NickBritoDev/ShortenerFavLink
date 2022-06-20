@@ -11,6 +11,18 @@
     background-color: #f5af19;
 }
 
+.container-home:hover .logo{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    position:static;
+    margin-top:18%;
+    margin-bottom: 0%;
+    background-color: #f5af19;
+}
+
 /*Logo Area*/
 .logo{
     display: flex;
