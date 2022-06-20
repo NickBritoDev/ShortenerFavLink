@@ -42,10 +42,10 @@ export default function Home() {
             <LinkBreak className='logo-icon'/>
             </div>
             <h1>Shortener and Favorite Link</h1>
-            <span>Cole o link no espaço abaixo 👇🏻​</span>
             </div>
 
             <div className='container-input'>
+            <span>Cole o link no espaço abaixo 👇🏻​</span>
                 <div>
                 <LinkSimple className='link-simple-icon' size={28} />
                 <input
